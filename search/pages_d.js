@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['graph_20profiler_0',['Scene Graph Profiler',['../group__coin__envvars.html',1,'']]],
-  ['graph_20profiling_1',['Scene Graph Profiling',['../coin_profiling_intro.html',1,'coin_related_pages']]]
+  ['element_20classes_0',['The Element Classes',['../group__coin__elements.html',1,'']]],
+  ['environment_20variables_1',['Environment variables',['../coin_environment_variables.html',1,'coin_related_pages']]],
+  ['extension_20nodes_2',['Dynamic Loading of Extension Nodes',['../coin_dynload_overview.html',1,'coin_related_pages']]]
 ];

@@ -1,5 +1,7 @@
 var coin_new_features =
 [
+    [ "New Features in Coin v4.0.8", "coin408.html", null ],
+    [ "New Features in Coin v4.0.7", "coin407.html", null ],
     [ "New Features in Coin v4.0.6", "coin406.html", null ],
     [ "New Features in Coin v4.0.5", "coin405.html", null ],
     [ "New Features in Coin v4.0.4", "coin404.html", null ],

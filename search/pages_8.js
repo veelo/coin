@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['books_20related_20to_20open_20inventor_20coin_0',['Books Related to Open Inventor / Coin',['../coin_books.html',1,'']]],
-  ['bundle_20classes_1',['The Bundle Classes',['../group__coin__bundles.html',1,'']]]
+  ['8_0',['New Features in Coin v4.0.8',['../coin408.html',1,'coin_new_features']]]
 ];
