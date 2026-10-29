@@ -153,6 +153,8 @@ $(function(){initNavTree('classSoNodeKitPath.html',''); initResizable(); });
   <tr class="odd"><td class="entry"><a class="el" href="classSoNodeKitPath.html#a9733bb3280a9e12e1ea2543f8f08723e">findFork</a>(const SoNodeKitPath *path) const</td><td class="entry"><a class="el" href="classSoNodeKitPath.html">SoNodeKitPath</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSoPath.html#af3afd770f54150a657bc74cce2b726f3">SoPath::findFork</a>(const SoPath *const path) const</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classSoPath.html#ae0f4de2f26dffbecda41eb4ef4faa6c8">findNode</a>(const SoNode *const node) const</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSoNodeKitPath.html#ace9ac99707ae53768011f761b759f4cd">fromPath</a>(const SoPath *path)</td><td class="entry"><a class="el" href="classSoNodeKitPath.html">SoNodeKitPath</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSoPath.html#a4ecf9b16bb5ee9f843e6b961e2352208">fullPath</a>(void) const</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSoBase.html#a7129603ba417a658d975be39d07ab8f3">getAuditors</a>(void) const</td><td class="entry"><a class="el" href="classSoBase.html">SoBase</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classSoPath.html#a4fc80e2d0e9330731b5c51ecd9f4e590">getByName</a>(const SbName name)</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSoPath.html#ae03891fefc14fe234ac170ede8657214">getByName</a>(const SbName name, SoPathList &amp;l)</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -177,7 +179,9 @@ $(function(){initNavTree('classSoNodeKitPath.html',''); initResizable(); });
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>IS_GROUP</b> enum value (defined in <a class="el" href="classSoBase.html">SoBase</a>)</td><td class="entry"><a class="el" href="classSoBase.html">SoBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSoBase.html#aa2861cbe3c2f43747bc289c7f55bbec3">isOfType</a>(SoType type) const</td><td class="entry"><a class="el" href="classSoBase.html">SoBase</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classSoPath.html#aa9b6748214f721d3962575406885ecfb">isRelevantNotification</a>(SoNotList *const l) const</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSoBase.html#a9f7fb26481bfb35d5821acfef0fc10b5">notify</a>(SoNotList *l)</td><td class="entry"><a class="el" href="classSoBase.html">SoBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSoPath.html#ab2bcfe7f9958ce1e1dd77ce136841cd7">nodeKitPath</a>(void) const</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSoBase.html#a9f7fb26481bfb35d5821acfef0fc10b5">notify</a>(SoNotList *l)</td><td class="entry"><a class="el" href="classSoBase.html">SoBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSoNodeKitPath.html#a5d24e25fca99e56932e7e3b9a6b56851">operator!=</a></td><td class="entry"><a class="el" href="classSoNodeKitPath.html">SoNodeKitPath</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classSoPath.html#a0098c2fc11f7d2e50e22937d414cb3d1">operator=</a>(const SoPath &amp;rhs)</td><td class="entry"><a class="el" href="classSoPath.html">SoPath</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classSoNodeKitPath.html#a8067b1878ec9a4848bb132f84b37c66f">operator==</a></td><td class="entry"><a class="el" href="classSoNodeKitPath.html">SoNodeKitPath</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classSoNodeKitPath.html#ae3218e321593b0f509f91e9ca2d8de56">pop</a>(void)</td><td class="entry"><a class="el" href="classSoNodeKitPath.html">SoNodeKitPath</a></td><td class="entry"></td></tr>
@@ -215,7 +219,7 @@ $(function(){initNavTree('classSoNodeKitPath.html',''); initResizable(); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 7 2026 12:33:03 for Coin by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Oct 29 2026 18:42:01 for Coin by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>
